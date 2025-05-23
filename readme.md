@@ -18,13 +18,14 @@ This portfolio not only highlights the technical and creative work I’ve done b
  ✅ **About Me Section**  
   A brief overview of my academic background, skill set, passions, and personal story as a developer.
 
- ✅ **Resume Access**  
-  A downloadable resume available for employers or collaborators to review.
-
+ 
  ✅ **Contact Section**  
   Direct access to my professional social media links and an optional contact form for easy communication.
 
-
+⚠️ Disclaimer
+ **Note:** This project currently contains **frontend functionality only**.  
+ Backend features such as form submission handling, dynamic data loading, and authentication are **not implemented yet**.  
+ These features will be added in a future version as the project evolves.
 
 🛠️ Technologies Used
 
