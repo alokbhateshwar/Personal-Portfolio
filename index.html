@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alok Bhateshwar - Portfolio</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Particles.js Container -->
+    <div id="particles-js"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-content">
+            <div class="logo">
+                <a href="#home">Alok<span class="logo-accent">.</span></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero" style="padding-top: 90px;">
+        <div class="hero-content">
+            <h1>Hi, I'm <span class="highlight">Alok Bhateshwar</span></h1>
+            <h2 class="hero-title">Data Scientist & Web Developer</h2>
+            <div class="typed-container">
+                <span class="typed"></span>
+            </div>
+            <p class="hero-description">
+                I specialize in building intelligent data-driven solutions and modern web applications. My passion lies in transforming data into actionable insights and creating beautiful, interactive web experiences.
+            </p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn primary-btn">View My Work</a>
+                <a href="#contact" class="btn secondary-btn">Contact Me</a>
+            </div>
+            <div class="social-links">
+                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="hero-image" data-tilt>
+            <img src="assets/developer.avif" alt="Alok Bhateshwar">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="section-header">
+            <h2>About Me</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="about-content">
+            <div class="about-text">
+                <p>
+                    I'm a Data Science student with a passion for web development. My journey in tech started with Python and Machine Learning, 
+                    where I discovered the power of data-driven solutions. Alongside my data science skills, I've developed expertise in 
+                    frontend technologies including HTML, CSS, JavaScript, and React.
+                </p>
+                <p>
+                    I love combining my data science knowledge with web development to create intelligent and user-friendly applications. 
+                    Whether it's building machine learning models or crafting responsive websites, I'm always excited to take on new challenges.
+                </p>
+                <div class="about-stats">
+                    <div class="stat">
+                        <span class="stat-number">Fresher</span>
+                        <span class="stat-text">Experience</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-text">Projects Completed</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-photo">
+                <img src="assets/alokpicture2.png" alt="Alok Bhateshwar" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="section-header">
+            <h2>Education</h2>
+            <div class="underline"></div>
+            <p class="section-subtitle">My Academic Journey</p>
+        </div>
+        <div class="education-list vertical-edu">
+            <div class="education-item graduation-item education-flex">
+                <img src="assets/bikaner-technical-university.webp" alt="Bikaner Technical University" class="education-img graduation-img">
+                <div class="education-details">
+                    <h3>Graduation</h3>
+                    <p><strong>Bikaner Technical University</strong></p>
+                    <p>Session: 2023-2027</p>
+                    <p>Branch: Computer Science and Engineering</p>
+                    <p>Currently in 3rd Year</p>
+                    <p>CGPA: 8.5+</p>
+                </div>
+            </div>
+            <div class="education-item education-flex">
+                <img src="assets/srk.jpg" alt="SRK Jobner" class="education-img">
+                <div class="education-details">
+                    <h3>Senior Secondary</h3>
+                    <p>SRK Jobner</p>
+                    <p>Stream: Science</p>
+                    <p>Session: 2022-2023</p>
+                    <p>Percentage: 83.6%</p>
+                </div>
+            </div>
+            <div class="education-item education-flex">
+                <div class="education-details">
+                    <h3>Secondary</h3>
+                    <p>Session: 2020-2021</p>
+                    <p>Percentage: 100%</p>
+                    <p>RBVM School, Machharkhani, Jobner</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="section-header">
+            <h2>My Skills</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="skills-container">
+            <div class="skill-category">
+                <div class="category-header">
+                    <i class="fas fa-code"></i>
+                    <h3>Languages & Frameworks</h3>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-item"><i class="fab fa-python"></i><h4>Python</h4></div>
+                    <div class="skill-item"><i class="fab fa-java"></i><h4>Java</h4></div>
+                    <div class="skill-item"><i class="fab fa-html5"></i><h4>HTML5</h4></div>
+                    <div class="skill-item"><i class="fab fa-css3-alt"></i><h4>CSS3</h4></div>
+                    <div class="skill-item"><i class="fab fa-js"></i><h4>JavaScript</h4></div>
+                    <div class="skill-item"><i class="fas fa-copyright"></i><h4>C</h4></div>
+                    <div class="skill-item"><i class="fas fa-code-branch"></i><h4>C++</h4></div>
+                </div>
+            </div>
+            <div class="skill-category">
+                <div class="category-header">
+                    <i class="fas fa-brain"></i>
+                    <h3>Data Science & Libraries</h3>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-item"><i class="fas fa-square-root-alt"></i><h4>NumPy</h4></div>
+                    <div class="skill-item"><i class="fas fa-table"></i><h4>Pandas</h4></div>
+                    <div class="skill-item"><i class="fas fa-chart-line"></i><h4>Matplotlib</h4></div>
+                    <div class="skill-item"><i class="fas fa-water"></i><h4>Seaborn</h4></div>
+                    <div class="skill-item"><i class="fas fa-fire"></i><h4>PyTorch</h4></div>
+                    <div class="skill-item"><i class="fas fa-database"></i><h4>SQL</h4></div>
+                    <div class="skill-item"><i class="fas fa-robot"></i><h4>Machine Learning</h4></div>
+                    <div class="skill-item"><i class="fas fa-brain"></i><h4>Deep Learning</h4></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="section-header">
+            <h2>My Projects</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="projects-grid">
+            <!-- Face Recognition Project -->
+            <div class="project-card" data-tilt>
+                <div class="project-image">
+                    <img src="assets/face recog.jpg" alt="Face Recognition">
+                    <div class="project-overlay">
+                        <div class="project-overlay-content">
+                            <h4>View Project Details</h4>
+                            <a href="#" class="btn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Face Recognition System</h3>
+                    <p>A deep learning-based face recognition system for secure authentication and attendance. Real-time detection and recognition using OpenCV and TensorFlow.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>TensorFlow</span>
+                        <span>OpenCV</span>
+                        <span>Keras</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" target="_blank" title="View Code"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- E-commerce Portfolio Project -->
+            <div class="project-card" data-tilt>
+                <div class="project-image">
+                    <img src="assets/eccomerce.webp" alt="E-commerce Portfolio">
+                    <div class="project-overlay">
+                        <div class="project-overlay-content">
+                            <h4>View Project Details</h4>
+                            <a href="#" class="btn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>E-commerce Portfolio</h3>
+                    <p>A modern e-commerce website portfolio with product listings, cart, and secure checkout. Built with React, Node.js, and MongoDB.</p>
+                    <div class="project-tech">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                        <span>Stripe</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" target="_blank" title="View Code"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Heart Disease Predictor Project -->
+            <div class="project-card" data-tilt>
+                <div class="project-image">
+                    <img src="assets/heart dease.jpg" alt="Heart Disease Predictor">
+                    <div class="project-overlay">
+                        <div class="project-overlay-content">
+                            <h4>View Project Details</h4>
+                            <a href="#" class="btn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Heart Disease Predictor</h3>
+                    <p>A machine learning model that predicts heart disease risk using patient data. Features include data preprocessing, model training, and a user-friendly interface.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Scikit-learn</span>
+                        <span>Pandas</span>
+                        <span>Streamlit</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" target="_blank" title="View Code"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Portfolio Website Project -->
+            <div class="project-card" data-tilt>
+                <div class="project-image">
+                    <img src="assets/developer.avif" alt="Portfolio Website">
+                    <div class="project-overlay">
+                        <div class="project-overlay-content">
+                            <h4>View Project Details</h4>
+                            <a href="#" class="btn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Personal Portfolio Website</h3>
+                    <p>A modern, responsive portfolio website showcasing my projects and skills. Features smooth animations, interactive elements, and a clean design.</p>
+                    <div class="project-tech">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>Particles.js</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" target="_blank" title="View Code"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Data Analysis Dashboard Project -->
+            <div class="project-card" data-tilt>
+                <div class="project-image">
+                    <img src="assets/data analysis.png" alt="Data Analysis Dashboard">
+                    <div class="project-overlay">
+                        <div class="project-overlay-content">
+                            <h4>View Project Details</h4>
+                            <a href="#" class="btn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Data Analysis Dashboard</h3>
+                    <p>An interactive dashboard for visualizing and analyzing business metrics. Includes real-time data updates and customizable charts.</p>
+                    <div class="project-tech">
+                        <span>React</span>
+                        <span>D3.js</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" target="_blank" title="View Code"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- NLP Chatbot Project -->
+            <div class="project-card" data-tilt>
+                <div class="project-image">
+                    <img src="assets/chatbot.avif" alt="NLP Chatbot">
+                    <div class="project-overlay">
+                        <div class="project-overlay-content">
+                            <h4>View Project Details</h4>
+                            <a href="#" class="btn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>NLP Chatbot</h3>
+                    <p>An intelligent chatbot powered by natural language processing. Capable of understanding context and providing relevant responses.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>TensorFlow</span>
+                        <span>NLTK</span>
+                        <span>Flask</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" target="_blank" title="View Code"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="section-header">
+            <h2>Get In Touch</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>alokbhateshwar@gmail.com</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Location</h3>
+                    <p>Jaipur, Rajasthan</p>
+                </div>
+            </div>
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" required>
+                    <label for="name">Your Name</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" required>
+                    <label for="email">Your Email</label>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" required></textarea>
+                    <label for="message">Your Message</label>
+                </div>
+                <button type="submit" class="btn primary-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Alok Bhateshwar. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/typed.min.js"></script>
+    <script src="js/particles.min.js"></script>
+    <script src="js/scrollreveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html> 

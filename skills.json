@@ -1,0 +1,31 @@
+{
+    "Languages & Frameworks": {
+        "icon": "fas fa-code",
+        "skills": [
+            { "name": "Python", "icon": "fab fa-python", "level": 90 },
+            { "name": "Java", "icon": "fab fa-java", "level": 80 },
+            { "name": "HTML5", "icon": "fab fa-html5", "level": 85 },
+            { "name": "CSS3", "icon": "fab fa-css3-alt", "level": 85 },
+            { "name": "JavaScript", "icon": "fab fa-js", "level": 80 },
+            { "name": "C", "icon": "fas fa-copyright", "level": 75 },
+            { "name": "C++", "icon": "fas fa-code-branch", "level": 75 }
+        ]
+    },
+    "Data Science & Libraries": {
+        "icon": "fas fa-brain",
+        "skills": [
+            { "name": "NumPy", "icon": "fas fa-square-root-alt", "level": 85 },
+            { "name": "Pandas", "icon": "fas fa-table", "level": 85 },
+            { "name": "Matplotlib", "icon": "fas fa-chart-line", "level": 80 },
+            { "name": "Seaborn", "icon": "fas fa-water", "level": 75 },
+            { "name": "PyTorch", "icon": "fas fa-fire", "level": 70 },
+            { "name": "SQL", "icon": "fas fa-database", "level": 80 }
+        ]
+    },
+    "Tools": {
+        "icon": "fas fa-tools",
+        "skills": [
+            { "name": "GitHub", "icon": "fab fa-github", "level": 85 }
+        ]
+    }
+} 
