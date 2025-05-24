@@ -2,6 +2,8 @@
 
 Welcome to my **Personal Portfolio Website** repository! This project is a well-structured, responsive web application that serves as a central platform to showcase my skills, projects, experience, and career journey in the field of software development.
 
+link for viewing the portfolio: https://alokbhateshwar.github.io/Personal-Portfolio/
+
 This portfolio not only highlights the technical and creative work I’ve done but also reflects my passion for building efficient and user-friendly web applications. Whether you're a recruiter, fellow developer, or a curious visitor, this website is designed to give you a comprehensive view of who I am and what I can do.
 
 🚀 Key Features
