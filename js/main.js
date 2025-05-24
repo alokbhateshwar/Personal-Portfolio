@@ -235,10 +235,6 @@ contactForm.addEventListener('submit', (e) => {
 
 // Handle Project Clicks
 function handleProjectClick(projectId) {
-    // Show maintenance message
-    const maintenanceMessage = 'This project is currently under maintenance. Please check back soon!';
-    alert(maintenanceMessage);
-    
     // Redirect to maintenance page
     window.location.href = 'maintenance.html';
 } 
