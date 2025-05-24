@@ -1,31 +1,122 @@
 {
-    "Languages & Frameworks": {
+    "Programming Languages": {
         "icon": "fas fa-code",
         "skills": [
-            { "name": "Python", "icon": "fab fa-python", "level": 90 },
-            { "name": "Java", "icon": "fab fa-java", "level": 80 },
-            { "name": "HTML5", "icon": "fab fa-html5", "level": 85 },
-            { "name": "CSS3", "icon": "fab fa-css3-alt", "level": 85 },
-            { "name": "JavaScript", "icon": "fab fa-js", "level": 80 },
-            { "name": "C", "icon": "fas fa-copyright", "level": 75 },
-            { "name": "C++", "icon": "fas fa-code-branch", "level": 75 }
+            {
+                "name": "HTML5",
+                "icon": "fab fa-html5",
+                "level": 90
+            },
+            {
+                "name": "CSS3",
+                "icon": "fab fa-css3-alt",
+                "level": 85
+            },
+            {
+                "name": "JavaScript",
+                "icon": "fab fa-js",
+                "level": 80
+            },
+            {
+                "name": "Python",
+                "icon": "fab fa-python",
+                "level": 90
+            },
+            {
+                "name": "Java",
+                "icon": "fab fa-java",
+                "level": 75
+            },
+            {
+                "name": "C",
+                "icon": "fas fa-code",
+                "level": 70
+            },
+            {
+                "name": "C++",
+                "icon": "fas fa-code",
+                "level": 70
+            }
         ]
     },
-    "Data Science & Libraries": {
+    "Data Science & AI": {
         "icon": "fas fa-brain",
         "skills": [
-            { "name": "NumPy", "icon": "fas fa-square-root-alt", "level": 85 },
-            { "name": "Pandas", "icon": "fas fa-table", "level": 85 },
-            { "name": "Matplotlib", "icon": "fas fa-chart-line", "level": 80 },
-            { "name": "Seaborn", "icon": "fas fa-water", "level": 75 },
-            { "name": "PyTorch", "icon": "fas fa-fire", "level": 70 },
-            { "name": "SQL", "icon": "fas fa-database", "level": 80 }
+            {
+                "name": "Machine Learning",
+                "icon": "fas fa-robot",
+                "level": 85
+            },
+            {
+                "name": "Deep Learning",
+                "icon": "fas fa-brain",
+                "level": 80
+            },
+            {
+                "name": "NumPy",
+                "icon": "fas fa-square-root-alt",
+                "level": 90
+            },
+            {
+                "name": "Pandas",
+                "icon": "fas fa-table",
+                "level": 90
+            },
+            {
+                "name": "Matplotlib",
+                "icon": "fas fa-chart-line",
+                "level": 85
+            },
+            {
+                "name": "Seaborn",
+                "icon": "fas fa-chart-bar",
+                "level": 80
+            },
+            {
+                "name": "SQL",
+                "icon": "fas fa-database",
+                "level": 85
+            },
+            {
+                "name": "PyTorch",
+                "icon": "fas fa-fire",
+                "level": 75
+            }
         ]
     },
-    "Tools": {
+    "Development Tools": {
         "icon": "fas fa-tools",
         "skills": [
-            { "name": "GitHub", "icon": "fab fa-github", "level": 85 }
+            {
+                "name": "VS Code",
+                "icon": "fas fa-code",
+                "level": 95
+            },
+            {
+                "name": "Git",
+                "icon": "fab fa-git-alt",
+                "level": 85
+            },
+            {
+                "name": "GitHub",
+                "icon": "fab fa-github",
+                "level": 85
+            },
+            {
+                "name": "Jupyter",
+                "icon": "fas fa-book",
+                "level": 90
+            },
+            {
+                "name": "Docker",
+                "icon": "fab fa-docker",
+                "level": 70
+            },
+            {
+                "name": "Postman",
+                "icon": "fas fa-paper-plane",
+                "level": 80
+            }
         ]
     }
 } 
