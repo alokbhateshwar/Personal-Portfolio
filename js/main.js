@@ -231,4 +231,14 @@ contactForm.addEventListener('submit', (e) => {
     // Add your form submission logic here
     alert('Thank you for your message! I will get back to you soon.');
     contactForm.reset();
-}); 
+});
+
+// Handle Project Clicks
+function handleProjectClick(projectId) {
+    // Show maintenance message
+    const maintenanceMessage = 'This project is currently under maintenance. Please check back soon!';
+    alert(maintenanceMessage);
+    
+    // Redirect to maintenance page
+    window.location.href = 'maintenance.html';
+} 
