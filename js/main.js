@@ -235,6 +235,11 @@ contactForm.addEventListener('submit', (e) => {
 
 // Handle Project Clicks
 function handleProjectClick(projectId) {
-    // Redirect to maintenance page
-    window.location.href = 'maintenance.html';
+    if (projectId === 'portfolio') {
+        // Open GitHub repository for portfolio project
+        window.open('https://github.com/alokbhateshwar/Personal-Portfolio', '_blank');
+    } else {
+        // Redirect to maintenance page for other projects
+        window.location.href = 'maintenance.html';
+    }
 } 
