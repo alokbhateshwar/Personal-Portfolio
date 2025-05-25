@@ -1,77 +1,64 @@
-// Initialize Typed.js
+// Initialize Typed.js with optimized settings
 const typed = new Typed('.typed', {
     strings: ['Data Scientist', 'Web Developer', 'Python Enthusiast'],
     typeSpeed: 50,
     backSpeed: 30,
     backDelay: 2000,
-    loop: true
+    loop: true,
+    showCursor: false // Reduces repaints
 });
 
-// Initialize Particles.js with enhanced configuration
+// Optimize Particles.js configuration
 particlesJS('particles-js', {
     particles: {
         number: {
-            value: 120,
+            value: 80, // Reduced number of particles
             density: {
                 enable: true,
-                value_area: 900
+                value_area: 1000
             }
         },
         color: {
-            value: ['#007bff', '#00ff88', '#ff00ff', '#ff8800', '#fff', '#ffd700']
+            value: ['#007bff', '#00ff88'] // Reduced color variations
         },
         shape: {
-            type: ['circle', 'triangle', 'polygon', 'star'],
+            type: ['circle'], // Simplified shapes
             stroke: {
                 width: 0,
                 color: '#000000'
-            },
-            polygon: {
-                nb_sides: 5
-            },
-            star: {
-                nb_points: 5
             }
         },
         opacity: {
-            value: 0.7,
-            random: true,
+            value: 0.5,
+            random: false, // Disabled random opacity
             anim: {
-                enable: true,
-                speed: 1.5,
-                opacity_min: 0.15,
-                sync: false
+                enable: false // Disabled opacity animation
             }
         },
         size: {
-            value: 4,
-            random: true,
+            value: 3,
+            random: false, // Disabled random size
             anim: {
-                enable: true,
-                speed: 2.5,
-                size_min: 0.2,
-                sync: false
+                enable: false // Disabled size animation
             }
         },
         line_linked: {
             enable: true,
-            distance: 140,
+            distance: 150,
             color: '#00ff88',
-            opacity: 0.3,
-            width: 1.2
+            opacity: 0.2,
+            width: 1
         },
         move: {
             enable: true,
-            speed: 2.2,
+            speed: 1.5, // Reduced speed
             direction: 'none',
-            random: true,
+            random: false,
             straight: false,
             out_mode: 'out',
             bounce: false,
             attract: {
-                enable: true,
-                rotateX: 800,
-                rotateY: 1600
+                enable: false // Disabled attraction
             }
         }
     },
@@ -83,163 +70,162 @@ particlesJS('particles-js', {
                 mode: 'grab'
             },
             onclick: {
-                enable: true,
-                mode: 'push'
+                enable: false // Disabled click interaction
             },
             resize: true
         },
         modes: {
             grab: {
-                distance: 160,
+                distance: 140,
                 line_linked: {
-                    opacity: 1
+                    opacity: 0.5
                 }
-            },
-            push: {
-                particles_nb: 6
             }
         }
     },
-    retina_detect: true
+    retina_detect: false // Disabled retina detection for better performance
 });
 
-// Add gradient background animation
+// Optimize gradient background animation
 const createGradientBackground = () => {
     const body = document.body;
     let hue = 0;
     
+    // Reduced animation frequency
     setInterval(() => {
-        hue = (hue + 1) % 360;
+        hue = (hue + 0.5) % 360;
         body.style.background = `linear-gradient(${hue}deg, rgba(0,123,255,0.1), rgba(0,255,136,0.1))`;
-    }, 50);
+    }, 100);
 };
 
 createGradientBackground();
 
-// Initialize ScrollReveal
+// Initialize ScrollReveal with optimized settings
 ScrollReveal().reveal('.section-header', {
-    delay: 200,
-    distance: '50px',
-    origin: 'bottom'
+    delay: 100,
+    distance: '30px',
+    origin: 'bottom',
+    duration: 800,
+    easing: 'cubic-bezier(0.5, 0, 0, 1)',
+    reset: false
 });
 
 ScrollReveal().reveal('.about-content', {
-    delay: 300,
-    distance: '50px',
-    origin: 'left'
+    delay: 200,
+    distance: '30px',
+    origin: 'left',
+    duration: 800,
+    easing: 'cubic-bezier(0.5, 0, 0, 1)',
+    reset: false
 });
 
 ScrollReveal().reveal('.project-card', {
-    delay: 200,
-    distance: '50px',
+    delay: 100,
+    distance: '30px',
     origin: 'bottom',
-    interval: 200
+    duration: 800,
+    easing: 'cubic-bezier(0.5, 0, 0, 1)',
+    interval: 100,
+    reset: false
 });
 
-// Initialize Vanilla Tilt
+// Optimize Vanilla Tilt
 VanillaTilt.init(document.querySelectorAll('[data-tilt]'), {
-    max: 25,
-    speed: 400,
+    max: 15, // Reduced tilt angle
+    speed: 300,
     glare: true,
-    'max-glare': 0.5
+    'max-glare': 0.3,
+    scale: 1.02,
+    perspective: 1000
 });
 
-// Load Skills from JSON
-fetch('skills.json')
-    .then(response => response.json())
-    .then(data => {
-        const skillsContainer = document.querySelector('.skills-container');
-        
-        Object.entries(data).forEach(([category, categoryData]) => {
-            const categoryElement = document.createElement('div');
-            categoryElement.className = 'skill-category';
-            
-            categoryElement.innerHTML = `
-                <div class="category-header">
-                    <i class="${categoryData.icon}"></i>
-                    <h3>${category}</h3>
-                </div>
-                <div class="skills-grid">
-                    ${categoryData.skills.map(skill => `
-                        <div class="skill-item">
-                            <i class="${skill.icon}"></i>
-                            <h4>${skill.name}</h4>
-                            <div class="skill-bar">
-                                <div class="skill-level" style="width: ${skill.level}%"></div>
-                            </div>
-                        </div>
-                    `).join('')}
-                </div>
-            `;
-            
-            skillsContainer.appendChild(categoryElement);
-        });
-    });
-
-// Mobile Menu Toggle
+// Optimize Skills Loading
 document.addEventListener('DOMContentLoaded', function() {
+    // Load skills with optimized rendering
+    fetch('skills.json')
+        .then(response => response.json())
+        .then(data => {
+            const skillsContainer = document.querySelector('.skills-container');
+            const fragment = document.createDocumentFragment();
+            
+            Object.entries(data).forEach(([category, categoryData]) => {
+                const categoryElement = document.createElement('div');
+                categoryElement.className = 'skill-category';
+                
+                categoryElement.innerHTML = `
+                    <div class="category-header">
+                        <i class="${categoryData.icon}"></i>
+                        <h3>${category}</h3>
+                    </div>
+                    <div class="skills-grid">
+                        ${categoryData.skills.map(skill => `
+                            <div class="skill-item">
+                                <i class="${skill.icon}"></i>
+                                <h4>${skill.name}</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: ${skill.level}%"></div>
+                                </div>
+                            </div>
+                        `).join('')}
+                    </div>
+                `;
+                
+                fragment.appendChild(categoryElement);
+            });
+            
+            skillsContainer.appendChild(fragment);
+        });
+
+    // Optimize Mobile Menu
     const menuBtn = document.querySelector('.menu-btn');
     const navLinks = document.querySelector('.nav-links');
     const navLinksItems = document.querySelectorAll('.nav-links a');
 
     if (menuBtn && navLinks) {
-        // Toggle menu when clicking the menu button
         menuBtn.addEventListener('click', function(e) {
             e.preventDefault();
-            e.stopPropagation();
             navLinks.classList.toggle('active');
             menuBtn.classList.toggle('active');
         });
 
-        // Close menu when clicking a nav link
         navLinksItems.forEach(link => {
             link.addEventListener('click', function() {
                 navLinks.classList.remove('active');
                 menuBtn.classList.remove('active');
             });
         });
-
-        // Close menu when clicking outside
-        document.addEventListener('click', function(e) {
-            if (!navLinks.contains(e.target) && !menuBtn.contains(e.target)) {
-                navLinks.classList.remove('active');
-                menuBtn.classList.remove('active');
-            }
-        });
-
-        // Prevent clicks inside nav from closing the menu
-        navLinks.addEventListener('click', function(e) {
-            e.stopPropagation();
-        });
     }
-});
 
-// Smooth Scrolling
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
+    // Optimize Smooth Scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
         });
     });
 });
 
-// Form Submission
+// Optimize Form Submission
 const contactForm = document.querySelector('.contact-form');
-contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    // Add your form submission logic here
-    alert('Thank you for your message! I will get back to you soon.');
-    contactForm.reset();
-});
+if (contactForm) {
+    contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        alert('Thank you for your message! I will get back to you soon.');
+        contactForm.reset();
+    });
+}
 
-// Handle Project Clicks
+// Optimize Project Click Handler
 function handleProjectClick(projectId) {
     if (projectId === 'portfolio') {
-        // Open GitHub repository for portfolio project
         window.open('https://github.com/alokbhateshwar/Personal-Portfolio', '_blank');
     } else {
-        // Redirect to maintenance page for other projects
         window.location.href = 'maintenance.html';
     }
 } 
