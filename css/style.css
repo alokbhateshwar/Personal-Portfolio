@@ -14,10 +14,16 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    will-change: transform;
 }
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 80px;
 }
 
 body {
@@ -38,6 +44,8 @@ body {
     left: 0;
     z-index: -1;
     background: transparent;
+    pointer-events: none;
+    will-change: transform;
 }
 
 /* Navigation */
@@ -45,14 +53,15 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(16px) saturate(180%);
-    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(0,0,0,0.05);
     padding: 0.7rem 0;
     box-shadow: 0 4px 24px rgba(0,0,0,0.07);
     z-index: 1000;
     transition: background 0.3s, box-shadow 0.3s;
+    will-change: transform, opacity;
 }
 
 .nav-content {
@@ -404,6 +413,9 @@ section {
     background: linear-gradient(90deg, var(--primary-color), #00ff88);
     border-radius: 3px;
     transition: width 1s ease;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    will-change: width;
 }
 
 /* Projects Section */
@@ -419,8 +431,12 @@ section {
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+                box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    perspective: 1000px;
 }
 
 .project-card:hover {
@@ -457,6 +473,9 @@ section {
     height: 100%;
     object-fit: cover;
     transition: transform 0.5s ease;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    will-change: transform;
 }
 
 .project-card:hover .project-image img {
@@ -711,6 +730,9 @@ footer {
         box-shadow: 0 8px 32px rgba(0,0,0,0.08);
         z-index: 1000;
         pointer-events: auto;
+        transform: translateZ(0);
+        backface-visibility: hidden;
+        will-change: transform, opacity;
     }
     .nav-links.active {
         left: 0;
@@ -824,7 +846,7 @@ footer {
 @keyframes fadeIn {
     from {
         opacity: 0;
-        transform: translateY(20px);
+        transform: translateY(10px);
     }
     to {
         opacity: 1;
