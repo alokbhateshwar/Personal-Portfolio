@@ -8,57 +8,65 @@ const typed = new Typed('.typed', {
     showCursor: false // Reduces repaints
 });
 
-// Optimize Particles.js configuration
+// Particles.js configuration with modern style
 particlesJS('particles-js', {
     particles: {
         number: {
-            value: 80, // Reduced number of particles
+            value: 50,
             density: {
                 enable: true,
-                value_area: 1000
+                value_area: 1200
             }
         },
         color: {
-            value: ['#007bff', '#00ff88'] // Reduced color variations
+            value: ['#6366F1', '#8B5CF6', '#EC4899', '#F43F5E', '#0EA5E9'] // Modern indigo/purple/pink palette
         },
         shape: {
-            type: ['circle'], // Simplified shapes
+            type: ['circle', 'triangle'],
             stroke: {
                 width: 0,
                 color: '#000000'
             }
         },
         opacity: {
-            value: 0.5,
-            random: false, // Disabled random opacity
+            value: 0.7,
+            random: true,
             anim: {
-                enable: false // Disabled opacity animation
+                enable: true,
+                speed: 1,
+                opacity_min: 0.1,
+                sync: false
             }
         },
         size: {
             value: 3,
-            random: false, // Disabled random size
+            random: true,
             anim: {
-                enable: false // Disabled size animation
+                enable: true,
+                speed: 2,
+                size_min: 0.1,
+                sync: false
             }
         },
         line_linked: {
             enable: true,
             distance: 150,
-            color: '#00ff88',
-            opacity: 0.2,
+            color: '#6366F1',
+            opacity: 0.4,
             width: 1
         },
         move: {
             enable: true,
-            speed: 1.5, // Reduced speed
+            speed: 1.5,
             direction: 'none',
-            random: false,
+            random: true,
             straight: false,
             out_mode: 'out',
             bounce: false,
             attract: {
-                enable: false // Disabled attraction
+                enable: true,
+                rotateX: 600,
+                rotateY: 1200
             }
         }
     },
@@ -67,35 +75,53 @@ particlesJS('particles-js', {
         events: {
             onhover: {
                 enable: true,
-                mode: 'grab'
+                mode: 'bubble'
             },
             onclick: {
-                enable: false // Disabled click interaction
+                enable: true,
+                mode: 'push'
             },
             resize: true
         },
         modes: {
-            grab: {
-                distance: 140,
-                line_linked: {
-                    opacity: 0.5
-                }
+            bubble: {
+                distance: 200,
+                size: 6,
+                duration: 2,
+                opacity: 0.8,
+                speed: 3
+            },
+            push: {
+                particles_nb: 4
             }
         }
     },
-    retina_detect: false // Disabled retina detection for better performance
+    retina_detect: true
 });
 
-// Optimize gradient background animation
+// Modern gradient background animation
 const createGradientBackground = () => {
     const body = document.body;
-    let hue = 0;
+    let time = 0;
     
-    // Reduced animation frequency
-    setInterval(() => {
-        hue = (hue + 0.5) % 360;
-        body.style.background = `linear-gradient(${hue}deg, rgba(0,123,255,0.1), rgba(0,255,136,0.1))`;
-    }, 100);
+    const updateGradient = () => {
+        time += 0.005;
+        
+        // Create a subtle wave effect
+        const wave1 = Math.sin(time) * 20;
+        const wave2 = Math.cos(time * 0.8) * 15;
+        
+        body.style.background = `
+            linear-gradient(
+                135deg,
+                rgba(99, 102, 241, 0.05) ${wave1}%,
+                rgba(139, 92, 246, 0.05) ${50 + wave2}%,
+                rgba(236, 72, 153, 0.05) ${100 - wave1}%
+            )
+        `;
+    };
+    
+    setInterval(updateGradient, 30);
 };
 
 createGradientBackground();
