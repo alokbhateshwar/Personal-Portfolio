@@ -224,9 +224,10 @@ nav {
 }
 
 .hero-image img {
-    max-width: 400px;
+    max-width: 300px;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    object-fit: cover;
 }
 
 /* Section Styles */
@@ -726,7 +727,11 @@ footer {
         margin-bottom: 2rem;
     }
     .hero-image {
-        display: none;
+        display: flex;
+        margin-top: 2rem;
+    }
+    .hero-image img {
+        max-width: 250px;
     }
     .cta-buttons {
         justify-content: center;
