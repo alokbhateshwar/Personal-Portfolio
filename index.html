@@ -276,17 +276,17 @@
                     <p>Jaipur, Rajasthan</p>
                 </div>
             </div>
-            <form class="contact-form">
+            <form class="contact-form" action="https://formspree.io/f/manorboj" method="POST">
                 <div class="form-group">
-                    <input type="text" id="name" required>
+                    <input type="text" name="name" id="name" required>
                     <label for="name">Your Name</label>
                 </div>
                 <div class="form-group">
-                    <input type="email" id="email" required>
+                    <input type="email" name="email" id="email" required>
                     <label for="email">Your Email</label>
                 </div>
                 <div class="form-group">
-                    <textarea id="message" required></textarea>
+                    <textarea name="message" id="message" required></textarea>
                     <label for="message">Your Message</label>
                 </div>
                 <button type="submit" class="btn primary-btn">Send Message</button>
