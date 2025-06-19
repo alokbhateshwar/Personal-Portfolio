@@ -773,11 +773,7 @@ footer {
         margin-bottom: 2rem;
     }
     .hero-image {
-        display: flex;
-        margin-top: 2rem;
-    }
-    .hero-image img {
-        max-width: 220px;
+        display: none;
     }
     .cta-buttons {
         justify-content: center;
@@ -872,6 +868,33 @@ footer {
     }
     .skill-category {
         padding: 1.2rem 0.7rem;
+    }
+    .resume-modal > div {
+        max-width: 98vw !important;
+        width: 98vw !important;
+        padding: 0.5rem !important;
+    }
+    .resume-modal iframe {
+        height: 300px !important;
+    }
+    .resume-modal .btn.primary-btn {
+        width: 100% !important;
+        font-size: 1.1rem !important;
+        padding: 1rem 0 !important;
+        margin-top: 1rem !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .resume-modal > div {
+        padding: 0.2rem !important;
+    }
+    .resume-modal iframe {
+        height: 180px !important;
+    }
+    .resume-modal .btn.primary-btn {
+        font-size: 1rem !important;
+        padding: 0.8rem 0 !important;
     }
 }
 
