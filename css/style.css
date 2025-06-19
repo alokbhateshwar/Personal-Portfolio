@@ -1063,4 +1063,112 @@ footer {
         width: 60px;
         height: 60px;
     }
+}
+
+/* Enhanced Internship Card Styling */
+.internship-card {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.internship-card .internship-inner {
+  background: var(--white);
+  color: var(--text-color);
+  padding: 2rem 2.5rem;
+  border-radius: 18px;
+  box-shadow: 0 6px 32px rgba(0,255,136,0.10), 0 1.5px 8px rgba(0,0,0,0.10);
+  min-width: 290px;
+  max-width: 480px;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  border: 2.5px solid var(--primary-color);
+  transition: box-shadow 0.25s, transform 0.25s;
+}
+.internship-card .internship-inner:hover {
+  box-shadow: 0 12px 40px rgba(0,255,136,0.18), 0 2px 12px rgba(0,0,0,0.13);
+  transform: translateY(-4px) scale(1.02);
+}
+.internship-card .internship-icon {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-top: 0.2rem;
+  flex-shrink: 0;
+}
+.internship-card .internship-details {
+  flex: 1;
+}
+.internship-card .internship-role {
+  font-weight: 700;
+  font-size: 1.18rem;
+  letter-spacing: 0.01em;
+  margin-bottom: 0.1rem;
+  color: var(--text-color);
+}
+.internship-card .internship-company {
+  color: var(--primary-color);
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+.internship-card .internship-location {
+  font-size: 0.99rem;
+  color: var(--light-text);
+}
+.internship-card .internship-desc {
+  margin-top: 0.7rem;
+  font-size: 0.99rem;
+  color: var(--light-text);
+  line-height: 1.5;
+}
+@media (max-width: 600px) {
+  .internship-card .internship-inner {
+    padding: 1.1rem 0.7rem;
+    min-width: 0;
+    max-width: 98vw;
+    gap: 0.7rem;
+  }
+  .internship-card .internship-icon {
+    font-size: 1.7rem;
+  }
+  .internship-card .internship-role {
+    font-size: 1.01rem;
+  }
+  .internship-card .internship-company {
+    font-size: 0.97rem;
+  }
+  .internship-card .internship-desc {
+    font-size: 0.93rem;
+  }
+}
+
+.internship-status {
+  background: #00c96b;
+  color: #fff;
+  font-size: 0.89em;
+  font-weight: 700;
+  border-radius: 7px;
+  padding: 0.22em 0.85em;
+  margin-left: 0.7em;
+  vertical-align: middle;
+  box-shadow: 0 0 0 0 rgba(0,201,107,0.7);
+  animation: ongoing-pulse 1.2s infinite cubic-bezier(0.66,0,0,1);
+  letter-spacing: 0.03em;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.18);
+}
+
+@keyframes ongoing-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0,201,107,0.7);
+    transform: scale(1);
+  }
+  70% {
+    box-shadow: 0 0 0 16px rgba(0,201,107,0);
+    transform: scale(1.09);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0,201,107,0);
+    transform: scale(1);
+  }
 } 
