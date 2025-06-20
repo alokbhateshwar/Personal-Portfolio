@@ -192,9 +192,14 @@ nav {
     font-size: 1.5rem;
     color: var(--primary-color);
     margin-bottom: 1rem;
-    min-height: 1.5em;
+    min-height: 2.2em;
     display: flex;
     align-items: center;
+}
+
+.typed {
+    display: inline-block;
+    min-width: 180px;
 }
 
 .hero-description {
