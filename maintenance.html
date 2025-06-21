@@ -3,83 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Under Maintenance - Alok Bhateshwar</title>
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="assets/faviconimg.png">
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    
+    <title>Under Maintenance</title>
     <style>
-        .maintenance-container {
-            min-height: 100vh;
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #0a0a0a;
+            color: #ffffff;
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
+            min-height: 100vh;
             text-align: center;
+        }
+        .container {
+            max-width: 600px;
             padding: 2rem;
         }
-        
         .maintenance-icon {
-            font-size: 5rem;
-            color: #007bff;
-            margin-bottom: 2rem;
-            animation: wrench 2.5s ease infinite;
-        }
-        
-        .maintenance-title {
-            font-size: 2.5rem;
+            font-size: 4rem;
+            color: #00d4ff;
             margin-bottom: 1rem;
-            color: #333;
         }
-        
-        .maintenance-message {
+        .title {
+            font-size: 2.5rem;
+            color: #ffffff;
+            margin-bottom: 1rem;
+        }
+        .message {
             font-size: 1.2rem;
-            color: #666;
+            color: #b0b0b0;
             margin-bottom: 2rem;
-            max-width: 600px;
+            line-height: 1.6;
         }
-        
         .back-button {
+            background: #00d4ff;
+            color: #0a0a0a;
             padding: 1rem 2rem;
-            background-color: #007bff;
-            color: white;
             text-decoration: none;
             border-radius: 5px;
+            font-weight: bold;
             transition: background-color 0.3s ease;
+            display: inline-block;
         }
-        
         .back-button:hover {
-            background-color: #0056b3;
-        }
-        
-        @keyframes wrench {
-            0% { transform: rotate(0deg); }
-            20% { transform: rotate(30deg); }
-            40% { transform: rotate(-30deg); }
-            60% { transform: rotate(15deg); }
-            80% { transform: rotate(-15deg); }
-            100% { transform: rotate(0deg); }
+            background: #00b8e6;
         }
     </style>
 </head>
 <body>
-    <div class="maintenance-container">
-        <i class="fas fa-wrench maintenance-icon"></i>
-        <h1 class="maintenance-title">Project Under Maintenance</h1>
-        <p class="maintenance-message">
-            We're currently working on improving this project. Please check back soon for updates.
-            Thank you for your patience!
+    <div class="container">
+        <div class="maintenance-icon">🔧</div>
+        <h1 class="title">Under Maintenance</h1>
+        <p class="message">
+            We're currently performing some maintenance on our site. We'll be back shortly!
+            Thank you for your patience.
         </p>
-        <a href="index.html" class="back-button">Back to Portfolio</a>
+        <a href="index.html" class="back-button">Go Back Home</a>
     </div>
 </body>
 </html> 
