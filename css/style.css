@@ -1,16 +1,16 @@
 /* Base Styles */
 :root {
-    --primary-color: #00d4ff;
-    --secondary-color: #6c757d;
-    --background-color: #0a0a0a;
-    --text-color: #ffffff;
-    --light-text: #b0b0b0;
+    --primary-color: #00e6e6;
+    --secondary-color: #ff4c60;
+    --background-color: #23242a;
+    --text-color: #fafdff;
+    --light-text: #e0e0e0;
     --white: #ffffff;
-    --dark-bg: #1a1a1a;
-    --card-bg: #1e1e1e;
-    --border-color: #333333;
-    --hover-bg: #2a2a2a;
-    --transition: all 0.3s ease;
+    --dark-bg: #2e2f36;
+    --card-bg: #2e2f36;
+    --border-color: #3a3b42;
+    --hover-bg: #35363d;
+    --transition: all 0.3s cubic-bezier(0.4,0,0.2,1);
 }
 
 * {
@@ -394,15 +394,24 @@ section {
     background: var(--card-bg);
     border-radius: 15px;
     padding: 2rem;
-    border: 1px solid var(--border-color);
-    transition: all 0.3s ease;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    border: none !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
+    transition: none !important;
+    animation: none !important;
 }
 
-.skill-category:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
-    border-color: var(--primary-color);
+.skill-category:hover,
+.skill-item:hover,
+.skill-bar:hover,
+.skill-level:hover {
+    background: none !important;
+    color: inherit !important;
+    box-shadow: none !important;
+    border-color: inherit !important;
+    transform: none !important;
+    filter: none !important;
+    outline: none !important;
 }
 
 .category-header {
@@ -445,14 +454,11 @@ section {
     padding: 1rem;
     background: var(--background-color);
     border-radius: 8px;
-    border: 1px solid var(--border-color);
-    transition: all 0.3s ease;
-}
-
-.skill-item:hover {
-    background: var(--hover-bg);
-    border-color: var(--primary-color);
-    transform: translateX(5px);
+    border: none !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
+    transition: none !important;
+    animation: none !important;
 }
 
 .skill-item i {
@@ -486,7 +492,8 @@ section {
     height: 100%;
     background: linear-gradient(90deg, var(--primary-color), #00ff88);
     border-radius: 3px;
-    transition: width 1s ease;
+    transition: none !important;
+    animation: none !important;
 }
 
 /* Projects Section */
@@ -503,9 +510,10 @@ section {
     border-radius: 15px;
     overflow: hidden;
     border: 1px solid var(--border-color);
-    transition: all 0.3s ease;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    transition: none !important;
+    animation: none !important;
     position: relative;
+    opacity: 1 !important;
 }
 
 .project-card:hover {
@@ -1202,4 +1210,20 @@ footer {
     50% {
         opacity: 0.7;
     }
+}
+
+/* Simple fade-in animation for project cards */
+@keyframes fadeInProject {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.project-card.fade-in {
+    animation: none !important;
 } 

@@ -254,4 +254,16 @@ function handleProjectClick(projectId) {
     } else {
         window.location.href = 'maintenance.html';
     }
-} 
+}
+
+// Intersection Observer for lazy loading sections
+const lazySections = document.querySelectorAll('section:not(.hero):not(.about):not(.skills)');
+const observer = new IntersectionObserver((entries, obs) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      obs.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.15 });
+lazySections.forEach(section => observer.observe(section)); 
