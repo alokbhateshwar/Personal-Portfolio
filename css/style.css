@@ -821,7 +821,7 @@ footer {
     }
 
     .hero-image {
-        order: -1;
+        display: none !important;
     }
 
     .cta-buttons {
