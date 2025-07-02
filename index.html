@@ -173,9 +173,16 @@
             <h2>My Projects</h2>
             <div class="underline"></div>
         </div>
+        <!-- Project Filter Buttons -->
+        <div class="project-filters" style="text-align:center; margin-bottom:2rem;">
+            <button class="btn filter-btn" data-filter="all">All</button>
+            <button class="btn filter-btn" data-filter="data-analysis">Data Analysis</button>
+            <button class="btn filter-btn" data-filter="machine-learning">Machine Learning</button>
+            <button class="btn filter-btn" data-filter="other">Other</button>
+        </div>
         <div class="projects-grid">
             <!-- Face Recognition Project -->
-            <div class="project-card" onclick="window.open('https://github.com/alokbhateshwar/face-finding.git', '_blank')" style="cursor: pointer;">
+            <div class="project-card" data-category="machine-learning" onclick="window.open('https://github.com/alokbhateshwar/face-finding.git', '_blank')" style="cursor: pointer;">
                 <div class="project-content">
                     <h3>Face Recognition System</h3>
                     <p>A deep learning-based face recognition system for secure authentication and attendance. Real-time detection and recognition using OpenCV and TensorFlow.</p>
@@ -192,7 +199,7 @@
                 </div>
             </div>
             <!-- Myntra Clone Project -->
-            <div class="project-card" onclick="window.open('https://github.com/alokbhateshwar/myntra-clone.git', '_blank')" style="cursor: pointer;">
+            <div class="project-card" data-category="other" onclick="window.open('https://github.com/alokbhateshwar/myntra-clone.git', '_blank')" style="cursor: pointer;">
                 <div class="project-content">
                     <h3>Myntra Clone</h3>
                     <p>A full-stack e-commerce platform clone with product recommendations, user authentication, and secure payment integration.</p>
@@ -209,7 +216,7 @@
                 </div>
             </div>
             <!-- Portfolio Website Project -->
-            <div class="project-card" onclick="window.open('https://github.com/alokbhateshwar/Personal-Portfolio.git', '_blank')" style="cursor: pointer;">
+            <div class="project-card" data-category="other" onclick="window.open('https://github.com/alokbhateshwar/Personal-Portfolio.git', '_blank')" style="cursor: pointer;">
                 <div class="project-content">
                     <h3>Personal Portfolio Website</h3>
                     <p>A modern, responsive portfolio website showcasing my projects and skills. Features smooth animations, interactive elements, and a clean design.</p>
@@ -226,7 +233,7 @@
                 </div>
             </div>
             <!-- Customer Churn Prediction -->
-            <div class="project-card" onclick="window.open('https://github.com/alokbhateshwar/customer-churn.git', '_blank')" style="cursor: pointer;">
+            <div class="project-card" data-category="machine-learning" onclick="window.open('https://github.com/alokbhateshwar/customer-churn.git', '_blank')" style="cursor: pointer;">
                 <div class="project-content">
                     <h3>Customer Churn Prediction</h3>
                     <p>Machine learning model to predict customer churn using historical data. Implements feature engineering and multiple classification algorithms.</p>
@@ -243,7 +250,7 @@
                 </div>
             </div>
             <!-- Stock Price Prediction -->
-            <div class="project-card" onclick="window.open('https://github.com/alokbhateshwar/Stock-pridiction.git', '_blank')" style="cursor: pointer;">
+            <div class="project-card" data-category="machine-learning" onclick="window.open('https://github.com/alokbhateshwar/Stock-pridiction.git', '_blank')" style="cursor: pointer;">
                 <div class="project-content">
                     <h3>Stock Price Prediction</h3>
                     <p>Time series analysis and prediction of stock prices using LSTM networks. Includes technical indicators and sentiment analysis.</p>
@@ -260,7 +267,7 @@
                 </div>
             </div>
             <!-- Social Media Sentiment Analysis -->
-            <div class="project-card" onclick="window.location.href='maintenance.html'" style="cursor: pointer;">
+            <div class="project-card" data-category="machine-learning" onclick="window.location.href='maintenance.html'" style="cursor: pointer;">
                 <div class="project-content">
                     <h3>Social Media Sentiment Analysis</h3>
                     <p>Real-time sentiment analysis of social media posts using NLP techniques. Includes data collection, preprocessing, and visualization.</p>
@@ -277,7 +284,7 @@
                 </div>
             </div>
             <!-- Netflix Data Cleaning Project -->
-            <div class="project-card" onclick="window.open('https://github.com/alokbhateshwar/Netflix-data-cleaning-.git', '_blank')" style="cursor: pointer;">
+            <div class="project-card" data-category="data-analysis" onclick="window.open('https://github.com/alokbhateshwar/Netflix-data-cleaning-.git', '_blank')" style="cursor: pointer;">
                 <div class="project-content">
                     <h3>Netflix Data Cleaning</h3>
                     <p>End-to-end data analysis and visualization on Netflix's content dataset using Python, Pandas, and Matplotlib. Uncovers trends, genres, and country-wise distributions.</p>
@@ -295,7 +302,7 @@
                 </div>
             </div>
             <!-- Pima Indians Dataset Analysis Project -->
-            <div class="project-card" onclick="window.open('https://github.com/alokbhateshwar/pima-indians-dataset-analysis.git', '_blank')" style="cursor: pointer;">
+            <div class="project-card" data-category="data-analysis" onclick="window.open('https://github.com/alokbhateshwar/pima-indians-dataset-analysis.git', '_blank')" style="cursor: pointer;">
                 <div class="project-content">
                     <h3>Pima Indians Dataset Analysis</h3>
                     <p>Exploratory data analysis and cleaning on the Pima Indians Diabetes Dataset. Focuses on health factors influencing diabetes in female patients.</p>
@@ -313,7 +320,7 @@
                 </div>
             </div>
             <!-- Employee Data Analysis Project -->
-            <div class="project-card" onclick="window.open('https://github.com/alokbhateshwar/employee-data-analysis.git', '_blank')" style="cursor: pointer;">
+            <div class="project-card" data-category="data-analysis" onclick="window.open('https://github.com/alokbhateshwar/employee-data-analysis.git', '_blank')" style="cursor: pointer;">
                 <div class="project-content">
                     <h3>Employee Data Analysis</h3>
                     <p>Comprehensive analysis of employee data to uncover trends in workforce demographics, performance, and retention using Python and Pandas.</p>
@@ -331,7 +338,7 @@
                 </div>
             </div>
             <!-- Medical Charges Analysis Project -->
-            <div class="project-card" onclick="window.open('https://github.com/alokbhateshwar/medical-charges-analysis.git', '_blank')" style="cursor: pointer;">
+            <div class="project-card" data-category="data-analysis" onclick="window.open('https://github.com/alokbhateshwar/medical-charges-analysis.git', '_blank')" style="cursor: pointer;">
                 <div class="project-content">
                     <h3>Medical Charges Analysis</h3>
                     <p>This is my project: an exploratory data analysis and visualization of medical insurance charges based on age, BMI, smoking status, and more. The project uncovers key factors impacting healthcare costs and features interactive visualizations.</p>
@@ -350,7 +357,7 @@
                 </div>
             </div>
             <!-- Hotel Booking Analysis Project -->
-            <div class="project-card" onclick="window.open('https://github.com/alokbhateshwar/hotel-booking-analysis.git', '_blank')" style="cursor: pointer;">
+            <div class="project-card" data-category="data-analysis" onclick="window.open('https://github.com/alokbhateshwar/hotel-booking-analysis.git', '_blank')" style="cursor: pointer;">
                 <div class="project-content">
                     <h3>Hotel Booking Analysis</h3>
                     <p>Analyzes hotel booking patterns and trends using Python. Provides insights into booking behaviors and preferences with clear visualizations.</p>
@@ -368,7 +375,7 @@
                 </div>
             </div>
             <!-- House Price Prediction Model Project -->
-            <div class="project-card" onclick="window.open('https://github.com/alokbhateshwar/House-Price-Prediction-Model-', '_blank')" style="cursor: pointer;">
+            <div class="project-card" data-category="machine-learning" onclick="window.open('https://github.com/alokbhateshwar/House-Price-Prediction-Model-', '_blank')" style="cursor: pointer;">
                 <div class="project-content">
                     <h3>House Price Prediction Model</h3>
                     <p>Machine learning regression model to predict house prices using Python, scikit-learn, and pandas with real estate dataset analysis. Implements Random Forest Regressor for accurate predictions and includes data cleaning, feature selection, and visualization.</p>
@@ -386,7 +393,7 @@
                 </div>
             </div>
             <!-- CGPA to Package Prediction Model Project -->
-            <div class="project-card" onclick="window.open('https://github.com/alokbhateshwar/cgpa-to-package-prediction-model', '_blank')" style="cursor: pointer;">
+            <div class="project-card" data-category="machine-learning" onclick="window.open('https://github.com/alokbhateshwar/cgpa-to-package-prediction-model', '_blank')" style="cursor: pointer;">
                 <div class="project-content">
                     <h3>CGPA to Package Prediction Model</h3>
                     <p>Linear Regression model to predict a student's placement package (LPA) based on CGPA. Demonstrates the relationship between academic performance and placement salary using data visualization and machine learning.</p>
@@ -404,7 +411,7 @@
                 </div>
             </div>
             <!-- Social Ads Logistic Regression Model Project -->
-            <div class="project-card" onclick="window.open('https://github.com/alokbhateshwar/social-ads-logistic-regression-model', '_blank')" style="cursor: pointer;">
+            <div class="project-card" data-category="machine-learning" onclick="window.open('https://github.com/alokbhateshwar/social-ads-logistic-regression-model', '_blank')" style="cursor: pointer;">
                 <div class="project-content">
                     <h3>Social Ads Logistic Regression Model</h3>
                     <p>Logistic Regression model to predict user purchase behavior based on social network ads data. Includes data preprocessing, model training, evaluation, and visualization of decision boundaries.</p>
@@ -471,5 +478,25 @@
             <button id="backToPortfolio" class="btn secondary-btn">Back to Portfolio</button>
         </div>
     </div>
+
+    <script>
+    // Project Filter Logic
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const projectCards = document.querySelectorAll('.project-card');
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const filter = btn.getAttribute('data-filter');
+        projectCards.forEach(card => {
+          if (filter === 'all' || card.getAttribute('data-category') === filter) {
+            card.style.display = '';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+      });
+    });
+    </script>
 </body>
 </html> 
