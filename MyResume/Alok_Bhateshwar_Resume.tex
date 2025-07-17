@@ -2,20 +2,24 @@
 \usepackage[margin=1in]{geometry}
 \usepackage{enumitem}
 \usepackage{hyperref}
+\usepackage{xcolor}
 \usepackage{parskip}
+\usepackage{fontawesome}
 \setlength{\parindent}{0pt}
 
+% Modern two-column resume structure
 %--------------------
 %    HEADER
 %--------------------
 \begin{document}
 
+% HEADER
 \begin{center}
     {\LARGE \textbf{Alok Bhateshwar}} \\[2pt]
     Data Scientist \& Web Developer \\[2pt]
-    Email: \href{mailto:developeralok5@gmail.com}{developeralok5@gmail.com} \quad
-    GitHub: \href{https://github.com/alokbhateshwar}{alokbhateshwar} \quad
-    LinkedIn: \href{https://www.linkedin.com/in/alok-bhateshwar-043202346}{alok-bhateshwar-043202346}
+    \href{mailto:alokbhateshwar@gmail.com}{\textcolor{blue}{alokbhateshwar@gmail.com}} \quad
+    \href{https://github.com/alokbhateshwar}{\textcolor{blue}{\faGithub\ GitHub}} \quad
+    \href{https://www.linkedin.com/in/alok-bhateshwar-043202346}{\textcolor{blue}{\faLinkedin\ LinkedIn}}
 \end{center}
 
 %--------------------
@@ -29,10 +33,10 @@ Computer Science student passionate about Data Science and Web Development. Expe
 %--------------------
 \section*{Skills}
 \begin{itemize}[leftmargin=*]
-    \item \textbf{Languages:} Python, JavaScript, HTML, CSS
-    \item \textbf{Frameworks/Libraries:} React, Node.js, Redux, TensorFlow, Keras, Pandas, NumPy, Scikit-learn
-    \item \textbf{Tools:} Git, Jupyter Notebook, MongoDB, YFinance, Matplotlib, Seaborn
-    \item \textbf{Other:} Data Analysis, Machine Learning, Deep Learning, Web Development
+    \item \textbf{Programming:} Python, JavaScript, HTML, CSS
+    \item \textbf{ML/Data:} Pandas, Scikit-learn, TensorFlow, Keras, NumPy
+    \item \textbf{Web:} React, Node.js, Redux, MongoDB
+    \item \textbf{Tools:} Git, Jupyter Notebook, YFinance, Matplotlib, Seaborn
 \end{itemize}
 
 %--------------------
@@ -50,26 +54,40 @@ Senior Secondary, Science \hfill Percentage: 83.6\%
 %--------------------
 \section*{Projects}
 \begin{itemize}[leftmargin=*]
-    \item \textbf{House Price Prediction Model:} Machine learning regression model to predict house prices using Python, scikit-learn, and pandas with real estate dataset analysis. Implements Random Forest Regressor for accurate predictions and includes data cleaning, feature selection, and visualization. (Python, Pandas, Scikit-learn, Random Forest, Jupyter Notebook)
-    \item \textbf{CGPA to Package Prediction Model:} Linear Regression model to predict a student's placement package (LPA) based on CGPA. Demonstrates the relationship between academic performance and placement salary using data visualization and machine learning. (Python, Pandas, Scikit-learn, Linear Regression, Jupyter Notebook)
-    \item \textbf{Social Ads Logistic Regression Model:} Logistic Regression model to predict user purchase behavior based on social network ads data. Includes data preprocessing, model training, evaluation, and visualization of decision boundaries. (Python, Pandas, Scikit-learn, Logistic Regression, Jupyter Notebook)
-    \item \textbf{Face Recognition System:} Deep learning-based system for secure authentication and attendance. Real-time detection and recognition using OpenCV and TensorFlow. (Python, TensorFlow, OpenCV, Keras)
-    \item \textbf{Myntra Clone:} Full-stack e-commerce platform clone with product recommendations, user authentication, and secure payment integration. (React, Node.js, MongoDB, Redux)
-    \item \textbf{Personal Portfolio Website:} Modern, responsive portfolio website with smooth animations and interactive elements. (HTML5, CSS3, JavaScript)
-    \item \textbf{Customer Churn Prediction:} Machine learning model to predict customer churn using historical data. (Python, Scikit-learn, Pandas, Matplotlib)
-    \item \textbf{Stock Price Prediction:} Time series analysis and prediction of stock prices using LSTM networks. (Python, TensorFlow, Pandas, YFinance)
-    \item \textbf{Netflix Data Cleaning:} Data analysis and visualization on Netflix's content dataset. (Python, Pandas, Matplotlib)
-    \item \textbf{Pima Indians Dataset Analysis:} Exploratory data analysis and cleaning on the Pima Indians Diabetes Dataset. (Python, Pandas, NumPy, Matplotlib, Seaborn)
-    \item \textbf{Employee Data Analysis:} Analysis of employee data to uncover trends in workforce demographics, performance, and retention. (Python, Pandas, NumPy, Matplotlib)
-    \item \textbf{Medical Charges Analysis:} Exploratory data analysis and visualization of medical insurance charges based on age, BMI, smoking status, and more. Uncovered key factors impacting healthcare costs using interactive visualizations. (Python, Pandas, Plotly, Seaborn, Matplotlib, Jupyter Notebook)
-    \item \textbf{Hotel Booking Analysis:} Analysis of hotel booking patterns and trends using Python. (Python, Pandas, Matplotlib)
+    % AI Movie Suggester (paragraph style)
+    \item \textbf{AI Movie Suggester} (\href{https://github.com/alokbhateshwar/ai-movie-suggester}{\textcolor{blue}{GitHub}} $\vert$ \href{https://ai-movie-suggester.streamlit.app/}{\textcolor{blue}{Live Demo}}) \\
+    \textit{Streamlit, Python, Pandas, TMDB API} \\
+    Developed a content-based movie recommender system with a modern UI. Integrated TMDB metadata and a precomputed similarity matrix for instant recommendations, and deployed a live demo for public use.
+    % House Price Prediction Model (paragraph style)
+    \item \textbf{House Price Prediction Model} (\href{https://github.com/alokbhateshwar/house-price-prediction}{\textcolor{blue}{GitHub}}) \\
+    \textit{Python, Scikit-learn, Pandas, Random Forest} \\
+    Developed a regression model to predict house prices with high accuracy. The project involved extensive data cleaning, feature engineering, and visualization to ensure robust and interpretable results, leveraging Python, Scikit-learn, Pandas, and Random Forest algorithms.
+    % Myntra Clone (paragraph style)
+    \item \textbf{Myntra Clone} (\href{https://github.com/alokbhateshwar/myntra-clone}{\textcolor{blue}{GitHub}}) \\
+    \textit{React, Node.js, MongoDB, Redux} \\
+    Built a full-stack e-commerce platform with authentication and payment integration. Implemented product recommendations and responsive design for a seamless user experience.
+    % Personal Portfolio Website (paragraph style)
+    \item \textbf{Personal Portfolio Website} (\href{https://github.com/alokbhateshwar/portfolio}{\textcolor{blue}{GitHub}}) \\
+    \textit{HTML5, CSS3, JavaScript} \\
+    Designed and developed a modern, responsive portfolio website. Integrated smooth animations and interactive elements for enhanced user experience.
+    % Additional Projects (paragraph one-liners)
+    \item \textbf{CGPA to Package Prediction Model} (\href{https://github.com/alokbhateshwar/cgpa-to-package}{\textcolor{blue}{GitHub}}): Linear Regression for placement package prediction using academic data.
+    \item \textbf{Social Ads Logistic Regression Model} (\href{https://github.com/alokbhateshwar/social-ads-logistic}{\textcolor{blue}{GitHub}}): Purchase prediction from social ads using logistic regression.
+    \item \textbf{Face Recognition System} (\href{https://github.com/alokbhateshwar/face-recognition}{\textcolor{blue}{GitHub}}): Deep learning for secure authentication and attendance.
+    \item \textbf{Customer Churn Prediction} (\href{https://github.com/alokbhateshwar/customer-churn}{\textcolor{blue}{GitHub}}): Machine learning model for customer churn analysis.
+    \item \textbf{Stock Price Prediction} (\href{https://github.com/alokbhateshwar/stock-price-prediction}{\textcolor{blue}{GitHub}}): LSTM-based time series forecasting for stock prices.
+    \item \textbf{Netflix Data Cleaning} (\href{https://github.com/alokbhateshwar/netflix-data-cleaning}{\textcolor{blue}{GitHub}}): Data analysis and visualization on Netflix content dataset.
+    \item \textbf{Pima Indians Dataset Analysis} (\href{https://github.com/alokbhateshwar/pima-indians-analysis}{\textcolor{blue}{GitHub}}): Exploratory data analysis and cleaning on the Pima Indians Diabetes Dataset.
+    \item \textbf{Employee Data Analysis} (\href{https://github.com/alokbhateshwar/employee-data-analysis}{\textcolor{blue}{GitHub}}): Analysis of workforce trends and retention using employee data.
+    \item \textbf{Medical Charges Analysis} (\href{https://github.com/alokbhateshwar/medical-charges-analysis}{\textcolor{blue}{GitHub}}): Exploratory data analysis of insurance charges based on demographic and health factors.
+    \item \textbf{Hotel Booking Analysis} (\href{https://github.com/alokbhateshwar/hotel-booking-analysis}{\textcolor{blue}{GitHub}}): Analysis of hotel booking patterns and trends using Python.
 \end{itemize}
 
 %--------------------
 %    EXPERIENCE
 %--------------------
 \section*{Experience}
-\textbf{Data Analyst \& Data Scientist Intern} \hfill IT EXPERT, Jaipur \\Ongoing
+\textbf{Data Analyst \& Data Scientist Intern} \hfill IT EXPERT, Jaipur \\
 \begin{itemize}[leftmargin=*]
     \item Contributed to real-world data analysis projects, gaining hands-on experience in Python, Pandas, and teamwork in a professional environment.
 \end{itemize}
